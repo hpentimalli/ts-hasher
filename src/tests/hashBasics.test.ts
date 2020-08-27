@@ -1,7 +1,17 @@
 import { describe, it } from 'mocha';
 import * as chai from 'chai';
 import * as chaidt from 'chai-datetime';
-import { hashString, hashBoolean, hashNumber, hashDate, NULL_HASH, hashNullable, hashOptional, UNDEFININED_HASH, hashNullish } from '../hashBasics';
+import {
+  hashString,
+  hashBoolean,
+  hashNumber,
+  hashDate,
+  NULL_HASH,
+  hashNullable,
+  hashOptional,
+  UNDEFININED_HASH,
+  hashNullish,
+} from '../hashBasics';
 
 chai.use(chaidt);
 const expect = chai.expect;

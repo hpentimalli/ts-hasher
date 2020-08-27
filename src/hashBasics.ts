@@ -16,7 +16,7 @@ export const hashBoolean: Hasher<boolean> = value => value ? 1 : 0;
 
 export const hashNumber: Hasher<number> = value => isNaN(value)
   ? NAN_HASH
-  : Number.isInteger(value) && value <= 0xFFFFFFFF && value >= 0xFFFFFFFF
+  : Number.isInteger(value) && value <= 0xFFFFFFFF && value >= -0xFFFFFFFF
     ? value
     : hashString(`__${value.toString()}__`);
 

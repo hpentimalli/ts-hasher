@@ -1,5 +1,5 @@
 {
-  "name": "ts-hash",
+  "name": "ts-hasher",
   "version": "0.0.1",
   "description": "Typescript hash library",
   "main": "dist/index.js",
